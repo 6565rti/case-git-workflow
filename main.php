@@ -1,13 +1,20 @@
 // release 0.1.0
 <?php
 
-function printMessage()
+function printMessage($name)
 {
-   echo "Hello!, How are you";
+   echo "Hello ".$name.", How are you";
 
 }
 
-printMessage();
+
+function addName()
+{
+  $name = "John";
+  printMessage($name);
+}
+
+addName();
 
 ?>
 
